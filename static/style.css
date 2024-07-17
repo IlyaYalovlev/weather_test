@@ -1,0 +1,114 @@
+body {
+    background-image: url('/static/background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1, h2, h3, p, td, th {
+    color: #3a3a3a;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.weather-info {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.top-cities {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.top-cities .city {
+    margin: 10px 0;
+}
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+.suggestions-box {
+    position: absolute;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.suggestions-box li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions-box li:hover {
+    background-color: #ddd;
+}
+
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9); /* Заливка для таблицы */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    white-space: nowrap;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.8);
+}
